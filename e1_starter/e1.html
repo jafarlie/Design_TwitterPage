@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+ 	<meta charset="utf-8">
+    <title>Exercise 1: Twitter Layout</title>
+    <link rel="stylesheet" type="text/css" href="e1_style.css">
+ </head>
+
+ <body>
+ 	
+ 	<!-- The header -->
+ 	<div id="header">
+		<img class="birdLogo" src="./bird.png">	
+		<input placeholder="Search Twitter" id="searchBar">
+		<a href="https://twitter.com/">
+			<div class="tweetATweet">Tweet</div>
+		</a>
+ 	</div>
+
+	<!-- The big banner image -->
+ 	<div id="banner">
+		<img class="bannerPic" src="./uoft_banner.jpeg">
+ 	</div>
+
+ 	<div id="profileStats">
+ 		<ul>
+ 			<!-- Style the list element: Label and number -->
+			 <li>Tweets<br><span class="profileStatsNumber">478</span></li>
+			 <li>Followers<br><span class="profileStatsNumber">23K</span></li>
+			 <li>Following<br><span class="profileStatsNumber">12</span></li>
+			 <li>Likes<br><span class="profileStatsNumber">10.3K</span></li>
+ 		</ul>
+ 	</div>
+
+ 	<!-- The Profile Info Section -->
+ 	<div id="profileInfo">
+ 		<h2>University of Toronto</h2>
+ 		<p class="grey">@UofT</p>
+ 		<p>
+ 			Connect with Canada's top university and one of the world’s strongest academic and research powerhouses. Find the latest news & events @uoftnews. #UofT
+		</p>
+ 	</div>
+
+
+ 	<!-- The Timeline Section -->
+ 	<div id='timeline'>
+
+ 		<div class='timelineHeader'>
+ 			<ul>
+	 			<li><a href="">Tweets</a></li>
+	 			<li><a href="">Tweets & Replies</a></li>
+ 			</ul>
+ 		</div>
+
+ 		<!-- First tweet -->
+ 		<div class='tweet'>
+ 			<!-- Put the tweet icon and content in this div.
+ 			You should have two divs inside this div: one that is a container for the tweet icon,
+ 			and one that has the content of the tweet.
+ 			Remember to look in the starter CSS for appropriate class names that 
+			 match these descriptions. -->
+			 <div class="tweetIconContainer">
+					<img class="tweetIcon" src="./uoft.jpg">	
+			 </div>
+			 <div class="tweetContent">
+				<div class="follow uoftFollow">Follow</div>
+				<h3>University of Toronto <span class="grey uoftHashTag">@UofT</span></h2>
+				
+ 				<p>
+ 					Another great day at UofT! <span class="hashtag">#UofT</span> <span class="hashtag">#GreatDay</span>
+				</p>
+			</div>
+		 </div>
+		<div class='timelineHeader'></div>
+ 		<!-- Second tweet -->
+ 		<div class='tweet'>
+			<div class="tweetIconContainer">
+				<img class="tweetIcon" src="./uoft.jpg">	
+			 </div>
+			 
+		 	<div class="tweetContent">
+				<div class="follow robarts">Follow</div>
+				<h3>University of Toronto <span class="grey">@UofT</span></h3>
+			 	<p>
+				 	Check out some books at <span class="hashtag">#robarts</span>
+				</p>
+				<img class="tweetContentPicture" src="./robarts.jpg">
+			</div>
+		 </div>
+		 <div class='timelineHeader'></div>
+		<!-- Add your own tweet below -->
+		<div class='tweet'>
+			<!-- Put the tweet icon and content in this div.
+			You should have two divs inside this div: one that is a container for the tweet icon,
+			and one that has the content of the tweet.
+			Remember to look in the starter CSS for appropriate class names that 
+			match these descriptions. -->
+			<div class="tweetIconContainer">
+				   <img class="tweetIcon" src="./profileImage.jpg">	
+			</div>
+			<div class="tweetContent">
+					<div class="follow me">Follow</div>
+			   <h3>Elvin Jafarli <span class="grey">@jafarlie</span></h3>
+				<p>
+					Mathematics Student, minoring in csc. Love computer science! <span class="hashtag">#CSCForever</span> <span class="hashtag">#CS</span> <span class="hashtag">#student</span>
+			   </p>
+		   </div>
+		</div>
+		<div class='timelineHeader'></div>
+		<div class='tweet'>
+			<div class="tweetIconContainer">
+				<img class="tweetIcon" src="./Hockey_Canada.svg.png">
+			</div>
+			<div class="tweetContent">
+					<div class="follow">Follow</div>
+					<h3>Hockey Canada <span class="grey">@HockeyCanada</span></h3>
+					<p>Highlights of Canada - Russia world Hockey Championship Final game</p>
+					<iframe width="500" height="315" src="https://www.youtube.com/embed/ATc3K38Vx0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class='timelineHeader'></div>
+	 </div>
+	 <img id="bigProfilePicCircle" src="./uoft.jpg">
+	 <div id="followSuggestions">
+		 <h3>Follow Suggestions</h3>
+		 <div class='timelineHeader'></div>
+		 <div id="followID">
+			 	<img src="profileImage.jpg" class="followPic"> <span id="ElvinJafarli"><strong>Jafarli Elvin</strong></span>
+				<div class="follow followMeElvin">Follow</div>
+		 </div>
+		 <div class='timelineHeader'></div>
+		 <div id="followID">
+				<img src="uoft.jpg" class="followPic"> <span id="ElvinJafarli"><strong>UofT</strong></span>
+			   <div class="follow followMeElvin">Follow</div>
+		</div>
+		<div class='timelineHeader'></div>
+		<div id="followID">
+				<img src="Hockey_Canada.svg.png" class="followPic"> <span id="ElvinJafarli"><strong>Canada HCK</strong></span>
+			   <div class="follow followMeElvin">Follow</div>
+		</div>
+		<div class='timelineHeader'></div>
+	 </div>
+ </body>
+</html>

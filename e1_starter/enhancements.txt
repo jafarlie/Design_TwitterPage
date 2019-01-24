@@ -1,0 +1,11 @@
+1) Added Twitter Tweet looking button. 
+   But actually made a div and linked the 
+   text inside, and gave a design of button.
+2) We have not covered iframe, but decided to 
+   have unusual tweet. Used youtube embeded code 
+   for the iframe.
+3) When you hover over Tweet "button", the background color changes. To make the tweet button look like a button, I gave border-radius property 25px, floated it right, made the display inline-block and gave the height auto property.
+4) Added follow button to each twitter post. Had a general class property, where the certain properties were in common and then gave extra class property to align each of the follow buttons individually.
+5) Added search twitter input bar, which is an input element. Positioned it to the right of Twitter bird icon.
+6) Created Follow Suggestions div, gave the display property inline-block, and floated it to the right.  When you hover over the suggested name, the color of the font changes and 
+    when hover over the follow button, the background color changes. Once you hover over the div element of suggested people, the background color changes to beige.

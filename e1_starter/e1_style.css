@@ -1,0 +1,262 @@
+/*** Exercise 1: Twitter CSS ***/
+
+/*
+#### You should not have to change the given property values. ###
+*/
+
+/*** Completed body style below ***/
+body {
+	background-color: #e6ecf0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*** Removes default style from links ***/
+a {
+ 	text-decoration: none;
+ 	color: black;
+}
+
+/***********************************************
+********** Add to the selectors below **********
+************************************************/
+
+/* You only need to add where it says "Add properties below" */
+
+
+/*** Header and banner styles below ***/
+
+#header {
+	padding: 5px;
+	background-color: white;
+}
+
+.birdLogo {
+	width: 30px;
+	margin-left: 40px
+}
+
+.bannerPic {
+	display: block;
+	width: 100%;
+	height: 300px;	
+}
+
+
+/*** Profile Statistics Bar styles below ***/
+
+#profileStats {
+	padding: 5px;
+	background-color: white;
+}
+
+#profileStats ul {
+	margin: 0px;
+	padding: 3px;
+	margin-left: 390px;
+}
+
+#profileStats ul li {
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none; /* Gets rid of list bullet points */
+	text-align: center;
+	
+	/* Add a proper display property: We want the stats to have 
+	a height, but also appear side-by-side */
+	display: inline-block;
+		
+}
+
+.profileStatsNumber {
+	display: block;
+	font-size: 150%;
+}
+
+
+/*** Profile info box styles below ***/
+
+#profileInfo {
+	background-color: white;
+	padding: 10px;
+	min-height: 300px;
+	width: 300px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 20px;
+	float: left;
+}
+
+
+/*** Timeline styles below ***/
+
+#timeline {
+	border-radius: 10px;
+	background-color: white;
+
+	/* Add properties below */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left;
+	width: 600px;
+}
+
+.timelineHeader {
+	border-bottom: 1px solid grey;
+}
+
+.timelineHeader ul {
+	margin: 0px;
+}
+
+.timelineHeader ul li {
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 150%;
+	font-weight: bold;
+	display: inline-block;
+}
+
+
+/*** Tweet styles below ***/
+
+.tweet {
+	background-color: white;
+	min-height: 100px;
+	overflow: auto;
+	display: flex;
+	width: 600px;
+}
+
+/* For the div that holds the tweet icon */
+.tweetIconContainer {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: left;
+}
+
+.tweetIcon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.tweetContent {
+	margin: 0px;
+	/* Add properties below */
+}
+
+/* For pictures inside tweets (like the Robarts pic) */
+.tweetContentPicture {
+	max-width: 500px;
+	margin-bottom: 10px;
+}
+
+
+
+/* Style the big profile picture circle here. */
+#bigProfilePicCircle {
+	position: absolute;
+	width: 200px;
+	top: 230px;
+	left: 100px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+
+/** Some font color classes for you to use. **/
+.grey {
+	color: grey;
+}
+
+
+.hashtag {
+	color: #5088e9;
+}
+.tweetATweet{
+	border-radius: 25px;
+	background-color: #4AB3F4;
+	width: 60px;
+	height: auto;
+	display: inline-block;
+	margin-right:20px;
+	text-align: center;
+	padding: 5px;
+	color: white;
+	float: right;
+}
+.tweetATweet:hover{
+	background-color: #1DA1F2;
+}
+.follow{
+	border-radius: 25px;
+	background-color: white;
+	width: 60px;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	color: #1DA1F2;
+	float: right;
+	left: 100px;
+	margin-top: 10px;
+	border: 1px solid #1DA1F2;	
+}
+.follow:hover{
+	background-color:#E8F5FD;
+	
+}
+.me{
+	margin-right: 12px;
+}
+.robarts{
+	margin-right:-10px;
+}
+.uoftFollow{
+	position: relative;
+	left: 192px;
+}
+.uoftHashTag{
+	display: inline-block;
+	float: right;
+}
+#searchBar{
+	position: relative;
+	bottom: 5px;
+	left: 5px;
+	border-radius: 25px;
+	height:20px;
+}
+#followSuggestions{
+	background-color: white;
+	padding: 10px;
+	min-height: 250px;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: right;
+
+}
+.followPic{
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+	margin-top: 5px;
+}
+#ElvinJafarli{
+	position: relative;
+	bottom: 20px;
+}
+.followMeElvin{
+	width: 40px;
+	font-size: 13px;
+}
+#ElvinJafarli:hover{
+	color: #17A2F3;
+}
+#followID:hover{
+	background-color: beige;
+}
